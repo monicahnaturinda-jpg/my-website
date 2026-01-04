@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Pulse Media | African Diaspora Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/video-card.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="hero bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl p-8 md:p-12 text-white mb-12">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Global Pulse Media</h1>
+                <p class="text-xl mb-6">Your trusted platform for African diaspora experiences, insights, and advice from Ugandan presenters who've walked the path.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#videos" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Watch Videos</a>
+                    <a href="#about" class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Videos -->
+        <section id="videos" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">Latest Episodes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <custom-video-card 
+                    title="Navigating Cultural Identity Abroad" 
+                    views="15K" 
+                    date="2 days ago"
+                    thumbnail="http://static.photos/people/640x360/1"
+                ></custom-video-card>
+                <custom-video-card 
+                    title="Career Growth in the Diaspora" 
+                    views="28K" 
+                    date="1 week ago"
+                    thumbnail="http://static.photos/office/640x360/2"
+                ></custom-video-card>
+                <custom-video-card 
+                    title="Maintaining Family Ties Across Continents" 
+                    views="42K" 
+                    date="3 weeks ago"
+                    thumbnail="http://static.photos/travel/640x360/3"
+                ></custom-video-card>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-16 bg-white rounded-xl p-8 shadow-md">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/people/640x360/4" alt="Global Pulse Media Team" class="rounded-lg w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">Our Story</h2>
+                    <p class="text-gray-600 mb-4">Global Pulse Media was founded by Ugandan diaspora members who understand the unique challenges and opportunities of living abroad while maintaining strong ties to Africa.</p>
+                    <p class="text-gray-600 mb-6">We create content that informs, inspires, and connects Africans worldwide, offering practical advice and fostering a sense of community among diaspora members.</p>
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition flex items-center">
+                            <i data-feather="youtube" class="mr-2"></i> Subscribe
+                        </a>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 transition flex items-center">
+                            <i data-feather="mail" class="mr-2"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">What Our Community Says</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/5" alt="Sarah K." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah K.</h4>
+                            <p class="text-gray-500 text-sm">London, UK</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Global Pulse Media helped me navigate my first year in the UK. Their advice on cultural adaptation was invaluable!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/6" alt="James M." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">James M.</h4>
+                            <p class="text-gray-500 text-sm">Toronto, Canada</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Finally a platform that addresses the unique challenges we face as African professionals abroad. Keep up the great work!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/7" alt="Amina N." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Amina N.</h4>
+                            <p class="text-gray-500 text-sm">Dubai, UAE</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Their episodes on maintaining family connections while abroad brought me to tears. So relatable and comforting."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
